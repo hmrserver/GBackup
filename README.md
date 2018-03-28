@@ -1,10 +1,10 @@
-## GBackup
+# GBackup
 ![alt tag](https://raw.githubusercontent.com/hmrserver/GBackup/master/preview.png)
 
 ## Introduction
 GBackup is an automated script which would compress user mentioned Mysql / mariaDB databases ( if mentioned ) and Server files into one file and upload it at Google Drive. It would also clear up the files from google drive which are n days old in the mentioned Folder Name (user can change the number of day(n) here).
 
-# What This Script Does
+## What This Script Does
 --------------
 This script does some simple tasks:
 * The script Installs gdrive if it does not already installed.
@@ -17,22 +17,22 @@ This script does some simple tasks:
 
 User can configure its settings which would be given at top portion of the script.
 
-### I have tested on Centos-6,7/Redhat-6,7.
+#### I have tested on Centos-6,7/Redhat-6,7.
 
-# Custom License
+## Custom License
 --------------
  * User may edit the item.
  * User can't re-distribute the script copy for free or paid.
  * Use it at your own risk. I'm not holding any responsibilities for any damage that this script may do (which shouldn't).
 
-# Requirements
+## Requirements
 --------------
 * `wget` - To download the gdrive installer.
 * `mysql` (cli) - To list databases.
 * `mysqldump` - To dump databases (in most cases, it comes with `mysql` cli).
 * `nano` - To edit the script's Configurations manually.
 
-# Installation
+## Installation
 --------------
 If you have all the requirements installed.
 then Follow the below instructions:
@@ -68,7 +68,7 @@ Now its been ready to be automated.
 
 Simply use it in a Cron and forget about it :D
 
-# For adding in Cron
+## For adding in Cron
 type this command to enter in the cron editor:
 ```
 crontab -e
