@@ -196,7 +196,7 @@ fi
     echo " "
     echo "-----------------------"
     echo "Uploading $PREFIX$DATEFORM.tar.gz at Google Drive..."
-    gdrive upload --parent -delete $folderID $PREFIX$DATEFORM.tar.gz
+    gdrive upload --parent $folderID --delete $PREFIX$DATEFORM.tar.gz
     echo "-----------------------"
 
     #Final Cleanup
