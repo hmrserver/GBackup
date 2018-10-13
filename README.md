@@ -82,3 +82,13 @@ then press i to start the insert mode and paste this in the last of the editor:
 and then save it by pressing esc then typing :wq and hitting enter.
 this cron will run the script twice everyday (at 1:00 & 13:00). and you can see the backup_log.log for crontab logs.
 For adjusting the cron according you your need, you can have a look at [here](https://docs.acquia.com/article/cron-time-string-format).
+
+## systemd service
+Alternatively, you can use systemd timer instead of cron:
+```
+mkdir -vp ~/.config/systemd/user/
+cp systemd/* ~/.config/systemd/user/
+systemctl --user daemon-reload
+systemctl --user enable --now GBackup.timer
+```
+Please read systemd.time(7), systemd.timer(5) for details.
