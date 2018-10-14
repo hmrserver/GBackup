@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup to Google Drive
+
+[Service]
+Type=simple
+ExecStart=/root/backup_gdrive.sh
+
+[Install]
+WantedBy=multi-user.target
